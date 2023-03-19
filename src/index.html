@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Tailwind | Anthony Valdez</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://kit.fontawesome.com/dab3c82309.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-emerald-600 font-['Poppins']">
+    <div class="flex justify-between py-1   text-emerald-100 " id="home">
+        <div class="text-3xl tracking-tightest ml-20 font-black">ACV</div>
+        <div class="mr-20 py-2">
+            <ul class="flex space-x-10 text-lg font-semibold uppercase">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex  text-emerald-100 " >
+        <div class="w-1/2 ml-20  flex flex-col gap-4 mt-72">            
+            <p class="text-6xl font-black tracking-wider">Anthony Valdez</p>
+            <p class="text-3xl font-bold">Front-End Developer</p>
+            <button class="w-36 p-2  text-emerald-100 border border-solid rounded-full  hover:bg-emerald-100 hover:text-emerald-700 duration-500 "><a href="http://">Send Message</a></button>
+        </div>
+        <div class="w-1/2" >
+            <img src="./images/dp.png" alt="image" class="mt-16 bg-contain w-fit rounded-full bg-transparent">
+  
+        </div>       
+    </div>
+
+    <div class="mx-20 mt-40 text-emerald-100 " id="skill">
+        <p class="text-3xl text-center font-bold ">SKILLS</p>
+        <div class="text-lg flex m-16">
+            
+            
+            <p class="mt-8 text-xl text-start w-1/2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto aliquam odit amet, asperiores, aspernatur explicabo quam veritatis perferendis facere rem dicta quia libero? Assumenda vitae sed omnis vero minus minima, mollitia deleniti exercitationem tempore magnam pariatur beatae ex fuga corporis! Doloremque nemo vel, consectetur quos exercitationem laborum optio fugit provident! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur unde voluptatum omnis voluptas non vero?
+            </p>
+
+            <div class="mt-8  grid gap-4 grid-cols-3 grid-rows-2 text-center w-1/2 tracking-wider ">
+                <i class="fa-brands fa-html5 text-6xl hover:text-emerald-900 duration-500 "><p class="text-lg">HTML5</p></i>
+                <i class="fa-brands fa-css3-alt text-6xl hover:text-emerald-900 duration-500"><p class="text-lg">CSS3</p></i>
+                <i class="fa-brands fa-square-js text-6xl hover:text-emerald-900 duration-500"><p class="text-lg">JAVASCRIPT</p></i>
+                <i class="fa-brands fa-java text-6xl hover:text-emerald-900 duration-500"><p class="text-lg">JAVA</p></i>
+                <i class="fa-solid fa-database text-6xl hover:text-emerald-900 duration-500"><p class="text-lg">SQL</p></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-20 mt-52 text-emerald-100" id="about">
+        <p class="uppercase text-3xl text-center font-bold ">About Me</p>
+        
+       <div class="flex mt-20 gap-20">
+            <div class=" w-1/2 ">
+                <img src="./images/undraw_coding_re_iv62 (3).svg" alt="" srcset="">
+            </div>
+            <div class="w-1/2">
+                <p class="text-start text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et at, repellat, eius maxime expedita velit saepe ipsa molestiae reprehenderit delectus a quae nulla praesentium fugit enim excepturi, dolores itaque facere ex! Ut vero delectus sint veritatis numquam? Itaque culpa debitis eveniet, autem explicabo eius nulla nam aut commodi quibusdam doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam suscipit sequi possimus dolorem, molestias nostrum eius maiores, labore voluptatibus provident ullam distinctio quod, tenetur consequuntur voluptates. Eaque, earum impedit.</p>
+            </div>
+       </div>
+    </div>
+
+    <div class=" text-emerald-100 mx-20 ">
+        <div class="  mt-40 text-3xl text-center font-bold ">
+            <p class="uppercase">Contact</p>           
+        </div>
+
+        <div class="flex ">
+            <div class="mt-40 flex flex-col  w-1/2 gap-10 text-emerald-100 text-xl">
+            <div>
+                    <i class="fa-solid fa-location-dot mr-4"></i>Laguna, Philippines               
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone mr-4"></i>+6393*******3               
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope mr-4"></i>anthonyvaldez018@gmail.com
+                </div>       
+            </div>
+
+            <div class="mt-16 w-1/2 ">
+                <form class="h-fit p-10 bg-emerald-100 rounded-lg">
+                    <p class=" text-2xl font-semibold text-emerald-600">Send Message</p>
+                    
+                    <input class="bg-transparent w-full border-solid mt-5 text-gray-700 border-b-2 border-neutral-400 " type="text" name="name" placeholder="Enter Name">
+                    
+                    <input class="bg-transparent w-full border-solid mt-10 text-gray-800 border-b-2 border-neutral-400 " type="email" name="email" placeholder="Enter E-mail">
+
+                    <textarea name="message" id="" rows="5"  placeholder="Enter Message" class="mt-10 w-full border-solid  border-2 border-neutral-400 resize-none text-black bg-transparent "></textarea>
+
+                   
+                    <button class="mt-2 text-white bg-emerald-600 w-20 p-2 ">Send</button>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="mt-40  text-emerald-900 ">
+        <div class=" bg-emerald-100 p-10  ">
+            <div class="flex justify-center items-center gap-5 ">
+              
+                <i class="fa-brands fa-facebook text-4xl  "></i>
+                <i class="fa-brands fa-twitter text-4xl "></i>
+                <i class="fa-brands fa-instagram text-4xl "></i>
+                <i class="fa-brands fa-linkedin text-4xl "></i>
+               
+            </div>
+            <footer>
+                <p class="mt-5 text-center text-lg">" Thank you for visiting our website, we appreciate your support! "</p>
+            </footer>
+        </div>
+    </div>
+
+   
+    
+</body>
+</html>
