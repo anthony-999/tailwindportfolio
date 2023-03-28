@@ -533,11 +533,6 @@ video {
   margin-right: 5rem;
 }
 
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .ml-20{
   margin-left: 5rem;
 }
@@ -856,11 +851,6 @@ video {
 .hover\:bg-emerald-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(209 250 229 / var(--tw-bg-opacity));
-}
-
-.hover\:text-emerald-900:hover{
-  --tw-text-opacity: 1;
-  color: rgb(6 78 59 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-800:hover{
