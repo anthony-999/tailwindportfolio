@@ -29,7 +29,7 @@
             <button class="w-36 p-2  text-emerald-100 border border-solid rounded-full  hover:bg-emerald-100 hover:text-gray-800 duration-500 "><a href="mailto:anthonyvaldez018@gmail.com">Send Message</a></button>
         </div>
         <div class="w-1/2" >
-            <img src="./images/dp.png" alt="image" class="mt-16 bg-contain w-fit rounded-full bg-transparent">
+            <img src="./images/dp.png" alt="image" class="mt-24 bg-contain w-fit rounded-full bg-transparent">
   
         </div>       
     </div>
@@ -97,17 +97,17 @@
             </div>
 
             <div class="mt-16 w-1/2 ">
-                <form class="h-fit p-10 bg-emerald-100 rounded-lg">
-                    <p class=" text-2xl font-semibold text-emerald-600">Send Message</p>
+                <form class="h-fit p-10 bg-emerald-100 rounded-lg  " id="form">
+                    <p class=" text-2xl font-semibold text-emerald-600 mb-5">Send Message</p>
                     
-                    <input class="bg-transparent w-full border-solid mt-5 text-gray-700 border-b-2 border-neutral-400 " type="text" name="name" placeholder="Enter Name">
+                    <input class="bg-transparent w-full border-solid mb-5 text-gray-700 border-b-2 border-neutral-400 " type="text" name="name" placeholder="Enter Name" id="name">
                     
-                    <input class="bg-transparent w-full border-solid mt-10 text-gray-800 border-b-2 border-neutral-400 " type="email" name="email" placeholder="Enter E-mail">
+                    <input class="bg-transparent w-full border-solid  text-gray-800 border-b-2 border-neutral-400 " type="email" name="email" placeholder="Enter E-mail" id="email">
 
-                    <textarea name="message" id="" rows="5"  placeholder="Enter Message" class="mt-10 w-full border-solid  border-2 border-neutral-400 resize-none text-black bg-transparent "></textarea>
+                    <textarea name="message" rows="5"  placeholder="Enter Message" class="mt-10 w-full border-solid  border-2 border-neutral-400 resize-none text-black bg-transparent " id="message"  ></textarea>
 
                    
-                    <button class="mt-2 text-white bg-emerald-600 w-20 p-2 ">Send</button>
+                    <button id="submitBtn" type="submit" class="mt-2 text-white bg-emerald-600 w-20 p-2 ">Send</button>
                    
                 </form>
             </div>
@@ -127,12 +127,55 @@
                
             </div>
             <footer>
-                <p class="mt-5 text-center text-base">" Thank you for visiting our website, we appreciate your support! "</p>
+                <p class="mt-5 text-center text-base">" Thank you for visiting my website, we appreciate your support! "</p>
             </footer>
         </div>
     </div>
 
-   
+   <script>
+    const submitBtn = document.getElementById("submitBtn");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    submitBtn.addEventListener("click", (e) =>{
+        e.preventDefault();
+
+        // form Parent element
+        var newElement = document.createElement("p"); // new ELEMENT p
+        var newTextName = document.createTextNode("Please Enter Name") // new text
+        var newTextEmail = document.createTextNode("Please Enter E-mail") // new text
+        var newTextMessage = document.createTextNode("Please Enter Message") // new text
+        var form = document.querySelector("#form");
+        
+        const message1 =  newElement.appendChild(newTextName); // for newTextName
+        const message2 =  newElement.appendChild(newTextEmail); // for newTextName
+        const message3 = newElement.appendChild(newTextMessage); // for newTextMessage
+
+        if(name.value == "" ){         
+            form.insertBefore(message1, name);
+            form.style.color = "red"
+
+        }if (email.value == ""){
+            form.insertBefore(message2, email);
+            form.style.color = "red"
+        }
+        if (message.value == ""){
+            form.insertBefore(message3, message);
+            form.style.color = "red"
+         
+            
+        }
+        else{
+           
+            alert("Message Sent!")
+           
+           
+        }
+      
+    });
+    
+   </script>
     
 </body>
 </html>
